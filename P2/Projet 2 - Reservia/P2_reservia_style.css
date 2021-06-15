@@ -7,14 +7,32 @@
 body
 {
     font-family: 'Times New Roman', Times, serif;
+    padding: 1%; margin: 1%;
 }
 
-header.img
+.logo
 {
     float: left; clear: right;
+    width: 6%; height: 6%;
 }
 
-nav
+.navigation
 {
-    clear: 
+    clear: right;
+    text-align: right;
+    font-size: 1.25em;
+    margin-right: 5%;
 }
+
+h1
+{
+    clear: both;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+header/p
+{
+    margin-top: 0%;
+}
+
