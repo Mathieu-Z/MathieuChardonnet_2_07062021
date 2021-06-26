@@ -84,29 +84,73 @@ header p
 {
     padding: 2%;
     padding-top: 0%;
-    display: flex;
     justify-content: flex-start;
+    text-align: start;
+    align-items: center;
+}
+
+form
+{
+    display: flex;
+    align-items: center;
+    height: 2%;
+}
+
+.trecherche
+{
+    padding: 0.9%;
+    border-collapse: collapse;
+    border: 2px solid #F2F2F2;
 }
 
 .brecherche
 {
     color: white;
     background-color: #0065FC;
-    padding: 0.7em;
+    padding: 1%;
     border: none;
-    border-radius: 0% 15% 15% 0%;
+    border-radius: 0% 25% 25% 0%;
+    border-collapse: collapse;
 }
 
-.trecherche
+.allfiltre
 {
-    padding: 0.6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filtre
+{
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    height: min-content;
+    word-wrap: normal;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filtre:hover
+{
+    background-color: #DEEBFF;
+}
+
+.filtre:focus
+{
+    background-color: #0065FC;
 }
 
 .fas.fa-map-marker-alt
 {
     background-color: #F2F2F2;
-    padding: 0.55em;
-    border-radius: 50% 0% 0% 50%
+    background-size: 1%;
+    padding: 1%;
+    border-radius: 25% 0% 0% 25%;
+    border-collapse: collapse;
+    align-items: center;
 }
 
 .fas.fa-money-bill-wave
@@ -156,8 +200,8 @@ header p
     text-align: center;
     color: #0065FC;
     float: left;
-    padding: 0.5%;
-    background-size: 40px;
+    padding: 1%;
+    background-size: 15px;
     border-radius: 100%;
     border: 2px solid #F2F2F2;
     margin-right: 0.5%;
@@ -184,14 +228,17 @@ em
 .logement
 {
     background-color: white;
-    padding: 1%;
+    width: auto;
+    height: auto;
+    padding: 1.5%;
     border-radius: 5%;
-    box-shadow: black;
+    box-shadow: 0px 0px 8px 1px grey;
 }
 
 .logement img
 {
     float:initial;
+    border-radius: 5% 5% 0% 0%;
 }
 
 #ancre-hébergement a
@@ -225,9 +272,15 @@ em
 .logement-pop 
 {
     background-color: white;
-    padding: 1%;
+    padding: 1.5%;
     border-radius: 5%;
-    box-shadow: 5px, 5px, 4px, black;
+    box-shadow: 0px 0px 8px 1px grey;
+}
+
+.logement-pop img
+{
+    float: initial;
+    border-radius: 5% 5% 0% 0%;
 }
 
 #ancre-activité
@@ -239,6 +292,10 @@ em
 
 .activité
 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
     border-radius: 5%;
     box-shadow: black;
 }
@@ -280,3 +337,8 @@ h3
 {
     font-weight: bold;
 }
+
+/* Tablette */
+
+
+
