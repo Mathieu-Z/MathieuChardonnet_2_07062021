@@ -224,6 +224,11 @@ em
     font-style: normal;
 }
 
+h2
+{
+    margin-left: 3%;
+}
+
 #ancre-hébergement
 {
     background-color: #F2F2F2;
@@ -231,29 +236,49 @@ em
     margin: 2%;
     margin-top: 0%;
     width: 54%;
-    padding: 2%;
-    padding-top: 1%;
+    padding-top: 0.5%;
     margin-bottom: 4%;
 }
 
 .logement
 {
     background-color: white;
-    width: auto;
-    height: auto;
-    padding: 1.5%;
-    border-radius: 5%;
+    width: 30%;
+    height: 30%;
+    padding: 1%;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 8px 1px grey;
+}
+
+.fas.fa-star
+{
+    margin-top: 5%;
+}
+
+.logement p
+{
+    margin: 0.5%;
+}
+
+.logement:hover
+{
+    transform: scale(1);
 }
 
 .logement img
 {
     float:initial;
-    border-radius: 5% 5% 0% 0%;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    object-fit: cover;
 }
 
 #ancre-hébergement a
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3%;
     text-decoration: none;
     color: black;
 }
@@ -283,22 +308,28 @@ em
 
 #ancre-populaire a
 {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
     text-decoration: none;
     color: black;
+
 }
 
 .logement-pop 
 {
     background-color: white;
     padding: 1.5%;
-    border-radius: 5%;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 8px 1px grey;
 }
 
 .logement-pop img
 {
     float: initial;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
 }
 
 #ancre-activité
