@@ -110,7 +110,7 @@ form
     background-color: #0065FC;
     padding: 1%;
     border: none;
-    border-radius: 0% 25% 25% 0%;
+    border-radius: 0 15px 15px 0;
     border-collapse: collapse;
 }
 
@@ -159,7 +159,7 @@ form
     background-color: #F2F2F2;
     background-size: 1%;
     padding: 1%;
-    border-radius: 25% 0% 0% 25%;
+    border-radius: 15px 0 0 15px;
     border-collapse: collapse;
     align-items: center;
 }
@@ -243,8 +243,8 @@ h2
 .logement
 {
     background-color: white;
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     padding: 1%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 8px 1px grey;
@@ -265,22 +265,25 @@ h2
     transform: scale(1);
 }
 
-.logement img
+.logement>img
 {
     float:initial;
     width: 100%;
-    border-radius: 10px 10px 10px 10px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 
 #ancre-hébergement a
 {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 3%;
+    margin: 1%;
     text-decoration: none;
     color: black;
+    width: 30%;
+    height: 30%;
 }
 
 #ancre-populaire
@@ -318,6 +321,9 @@ h2
 
 .logement-pop 
 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
     padding: 1.5%;
     border-radius: 20px 20px 20px 20px;
@@ -327,9 +333,17 @@ h2
 .logement-pop img
 {
     float: initial;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
+    border-radius: 20px 0 0 20px;
+    width: 50%;
     object-fit: cover;
+}
+
+.logement-pop .fas.fa-star
+{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #ancre-activité
@@ -345,14 +359,32 @@ h2
     flex-direction: column;
     width: 25%;
     height: auto;
-    border-radius: 5%;
-    box-shadow: black;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 8px 1px grey;
+}
+
+.activité img
+{
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.activité p
+{
+    margin-left: 2%;
 }
 
 #ancre-activité a
 {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: black;
+}
+
+#ancre-activité a:hover
+{
+    transform: scale(1);
 }
 
 footer
@@ -388,6 +420,26 @@ h3
 }
 
 /* Tablette */
+@media screen and (max-width: px)
+{
+    .nav
+    {
 
+    }
+    
+}
 
+/* Mobile */
+@media screen and (max-width: px)
+{
+    .nav
+    {
 
+    }
+    
+    .footer
+    {
+        flex-direction: column;
+        justify-content: start;
+    }
+}
