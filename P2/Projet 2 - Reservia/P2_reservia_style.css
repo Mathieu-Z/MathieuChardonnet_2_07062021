@@ -419,6 +419,22 @@ h3
     font-weight: bold;
 }
 
+.bluestar
+{
+    color: #0065FC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.greystar
+{
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 /* Tablette */
 @media screen and (max-width: px)
 {
