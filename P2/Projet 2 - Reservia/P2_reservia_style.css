@@ -211,7 +211,7 @@ form
     text-align: center;
     color: #0065FC;
     float: left;
-    padding: 1%;
+    padding: 5px;
     background-size: 15px;
     border-radius: 100%;
     border: 2px solid #F2F2F2;
@@ -235,9 +235,11 @@ h2
     float: left;
     margin: 2%;
     margin-top: 0%;
-    width: 54%;
+    width: 56%;
+    padding: 1%;
     padding-top: 0.5%;
     margin-bottom: 4%;
+    margin-right: 1%;
 }
 
 .logement
@@ -245,14 +247,9 @@ h2
     background-color: white;
     width: 100%;
     height: 100%;
-    padding: 1%;
+    padding: 2%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 8px 1px grey;
-}
-
-.fas.fa-star
-{
-    margin-top: 5%;
 }
 
 .logement p
@@ -289,10 +286,11 @@ h2
 #ancre-populaire
 {
     background-color: #F2F2F2;
-    width:30%;
+    width:31%;
     float: right;
     margin: 2%;
     margin-top: 0%;
+    margin-left: 1%;
     padding: 2%;
     padding-top: 1%;
 }
@@ -313,10 +311,9 @@ h2
 {
     display: flex;
     flex-direction: column;
-    margin: 3%;
+    margin-bottom: 25px;
     text-decoration: none;
     color: black;
-
 }
 
 .logement-pop 
@@ -325,17 +322,17 @@ h2
     flex-direction: row;
     flex-wrap: wrap;
     background-color: white;
-    padding: 1.5%;
-    border-radius: 20px 20px 20px 20px;
+    padding: 2%;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 8px 1px grey;
 }
 
 .logement-pop img
 {
-    float: initial;
-    border-radius: 20px 0 0 20px;
+    border-radius: 10px 0 0 10px;
     width: 50%;
     object-fit: cover;
+    margin-right: 10px;
 }
 
 .logement-pop .fas.fa-star
@@ -376,7 +373,7 @@ h2
 
 #ancre-activité a
 {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     text-decoration: none;
     color: black;
@@ -419,25 +416,34 @@ h3
     font-weight: bold;
 }
 
+.star
+{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-top: 2%;
+}
+
 .bluestar
 {
     color: #0065FC;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .greystar
 {
     color: #F2F2F2;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 /* Tablette */
-@media screen and (max-width: px)
+@media screen and (min-width: 768px) and (max-width: 1260px)
 {
+    .logo
+    {
+        width: 11%;
+        height: 11%;
+    }
     .nav
     {
 
@@ -446,15 +452,36 @@ h3
 }
 
 /* Mobile */
-@media screen and (max-width: px)
+@media screen and (max-width: 767px)
 {
+    .logo
+    {
+        width: 15%; 
+        height: 15%;
+    }
+
     .nav
     {
 
     }
     
+    #ancre-hébergement
+    {
+        width: 100%;
+        display: flex;
+    }
+
+    #ancre-populaire
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    }
+
     .footer
     {
+        display: flex;
         flex-direction: column;
         justify-content: start;
     }
