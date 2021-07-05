@@ -119,21 +119,21 @@ form
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .allfiltre p
 {
     margin-right: 2%;
-    margin-left: 2%;
 }
 
 .filtre
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     width: max-content;
     height: 32px;
-    word-wrap: normal;
     border: 2px solid #F2F2F2;
     border-left: none;
     border-radius: 25px 25px 25px 25px;
@@ -226,7 +226,7 @@ em
 
 h2
 {
-    margin-left: 3%;
+    margin-left: 1%;
 }
 
 #ancre-hébergement
@@ -259,24 +259,24 @@ h2
 
 .logement:hover
 {
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
 .logement>img
 {
     float:initial;
     width: 100%;
-    height: auto;
+    height:auto;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
-}
+} 
 
 #ancre-hébergement a
 {
     display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1%;
+    margin: 1.25%;
     text-decoration: none;
     color: black;
     width: 30%;
@@ -327,12 +327,11 @@ h2
     box-shadow: 0px 0px 8px 1px grey;
 }
 
-.logement-pop img
+.logement-pop>img
 {
     border-radius: 10px 0 0 10px;
     width: 50%;
     object-fit: cover;
-    margin-right: 10px;
 }
 
 .logement-pop .fas.fa-star
@@ -371,9 +370,18 @@ h2
     margin-left: 2%;
 }
 
+#ancre-activité>div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
 #ancre-activité a
 {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     text-decoration: none;
     color: black;
@@ -381,7 +389,19 @@ h2
 
 #ancre-activité a:hover
 {
-    transform: scale(1);
+    transform: scale(1.05);
+}
+
+.activité-grand
+{
+    width: 25%;
+    height: 500px;
+}
+
+.activité-petit
+{
+    width: 25%;
+    height: 250px;
 }
 
 footer
@@ -467,13 +487,13 @@ h3
     
     #ancre-hébergement
     {
-        width: 100%;
+        width: auto;
         display: flex;
     }
 
     #ancre-populaire
     {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: column;
         margin-left: 2%;
@@ -484,5 +504,6 @@ h3
         display: flex;
         flex-direction: column;
         justify-content: start;
+        flex-wrap: nowrap;
     }
 }
