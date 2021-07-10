@@ -132,7 +132,7 @@ form
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: max-content;
+    width:auto;
     height: 32px;
     border: 2px solid #F2F2F2;
     border-left: none;
@@ -141,7 +141,13 @@ form
     align-items: center;
     margin-right: 2%;
     padding: 0%;
-    padding-right: 1%;
+    padding-right: 2%;
+}
+
+.filtre p
+{
+    padding: 1%;
+    margin: 0;
 }
 
 .filtre:hover
@@ -322,7 +328,7 @@ h2
     flex-direction: row;
     flex-wrap: wrap;
     background-color: white;
-    padding: 2%;
+    padding: 1%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 8px 1px grey;
 }
@@ -332,6 +338,7 @@ h2
     border-radius: 10px 0 0 10px;
     width: 50%;
     object-fit: cover;
+    margin-right: 1%;
 }
 
 .logement-pop .fas.fa-star
@@ -404,7 +411,7 @@ h2
     height: 250px;
 }
 
-footer
+.footer
 {
     width: auto;
     display: flex;
@@ -464,11 +471,7 @@ h3
         width: 11%;
         height: 11%;
     }
-    .nav
-    {
 
-    }
-    
 }
 
 /* Mobile */
@@ -482,13 +485,21 @@ h3
 
     .nav
     {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
 
+    .allfiltre
+    {
+        flex-wrap: wrap;
     }
     
     #ancre-hébergement
     {
         width: auto;
         display: flex;
+        flex-direction: column;
     }
 
     #ancre-populaire
@@ -504,6 +515,6 @@ h3
         display: flex;
         flex-direction: column;
         justify-content: start;
-        flex-wrap: nowrap;
+        word-wrap: normal;
     }
 }
