@@ -419,6 +419,12 @@ h2
     transform: scale(1.05);
 }
 
+.double-activite
+{
+    width: 25%;
+    height: 500px;
+}
+
 .activité-grand
 {
     width: 25%;
@@ -427,8 +433,8 @@ h2
 
 .activité-petit
 {
-    width: 25%;
-    height: 250px;
+    width: auto;
+    height: 50%;
 }
 
 .footer
