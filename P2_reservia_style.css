@@ -501,6 +501,45 @@ h3
         height: 11%;
     }
 
+    #ancre-populaire
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        float: none;
+    }
+
+    #ancre-populaire a
+    {
+        width: 31%;
+        height: 20vmax;
+        display: inline-flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        margin-inline: 1%;
+        flex-wrap: nowrap;
+    }
+
+    .logement-pop
+    {
+        width: 100%;
+        padding: 2%;
+    }
+
+    #ancre-hébergement
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2%;
+    }
+
+    #ancre-hébergement a
+    {
+        margin: 1%;
+    }
+
 }
 
 /* Mobile */
