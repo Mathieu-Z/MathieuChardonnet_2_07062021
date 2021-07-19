@@ -205,7 +205,7 @@ em
 h2
 {
     margin-left: 1%;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 #ancre-hébergement
@@ -217,11 +217,6 @@ h2
     margin-top: 0;
     padding: 1%;
     border-radius: 20px 20px 20px 20px;
-}
-
-#ancre-hébergement>h2
-{
-    margin-bottom: 20px;
 }
 
 #ancre-hébergement>div>a>p
@@ -278,6 +273,11 @@ h2
     margin-top: 0;
     padding: 1%;
     border-radius: 20px 20px 20px 20px;
+}
+
+#ancre-populaire>h2
+{
+    margin-bottom: 0;
 }
 
 .fas.fa-chart-line
@@ -359,67 +359,73 @@ h2
     padding-top: 0%;
 }
 
-.activité
+figure
 {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 8px 1px grey;
 }
 
-.imgacti
+.activité-grand
 {
-    border-radius: 10px 10px 0 0;
-    height: 90%;
+    margin-top: 0;
+    height: 98%;
+    margin: 2%;
+    max-height: 500px;
 }
 
-.imgacti>img
+.activité-grand>img
 {
     object-fit: cover;
     width: 100%;
-    height: 90%;
-
+    height: 95%;
+    border-radius: 10px 10px 0 0;
 }
 
-.txtacti
+.double-activite
 {
-    padding: 2%;
-    height: 10%;
+    max-height: 500px;
+}
+
+.activité-petit
+{
+    height: 48.35%;
+    max-height: 250px;
+    margin-top: 0;
+    margin: 2%;
+}
+
+.activité-petit>img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 79%;
+    border-radius: 10px 10px 0 0;
+}
+
+figcaption
+{
+    padding-left: 2%;
+    height: 50px;
 }
 
 #ancre-activité>div
 {
     display: flex;
     flex-wrap: nowrap;
-    height: auto;
-    border-spacing: 10px 10px;
+    max-height: 500px;
 }
 
 #ancre-activité a
 {
     text-decoration: none;
     color: black;
-    height: 100%;
 }
 
 #ancre-activité a:hover
 {
     transform: scale(1.05);
-}
-
-.double-activite
-{
-    width: 25%;
-    height: 500px;
-}
-
-.activité-grand
-{
-    width: 25%;
-}
-
-.activité-petit
-{
-    width: auto;
-    height: 50%;
 }
 
 .footer
@@ -557,8 +563,8 @@ h3
     #ancre-hébergement a
     {
         width: 97%;
-        height: 25vmax;
-        margin-bottom: 3%;
+        height: auto;
+        margin-bottom: 2%;
     }
 
     .logement
@@ -579,6 +585,20 @@ h3
     #ancre-populaire a
     {
         height: 15vmax;
+    }
+
+    #ancre-activité>div
+    {
+        flex-direction: column;
+    }
+    .activité
+    {
+        width: 100%;
+    }
+
+    .activité-grand
+    {
+        width: 100%;
     }
 
     .footer
