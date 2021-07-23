@@ -114,12 +114,13 @@ form
 
 .trecherche
 {
+    width: 300px;
     padding: 0.9%;
     border-collapse: collapse;
     border: 2px solid #F2F2F2;
 }
 
-.brecherche
+#brecherche
 {
     color: white;
     background-color: #0065FC;
@@ -127,6 +128,11 @@ form
     border: none;
     border-radius: 0 15px 15px 0;
     border-collapse: collapse;
+}
+
+#lrecherche
+{
+    display: none;
 }
 
 .allfiltre
@@ -222,6 +228,13 @@ em
     font-style: normal;
 }
 
+.bloc
+{
+    height: 680px;
+    width: 100%;
+    min-height: 670px;
+}
+
 h2
 {
     margin-left: 1%;
@@ -312,7 +325,6 @@ h2
     margin-top: 25px;
     text-decoration: none;
     color: black;
-    height: 10vmax;
 }
 
 #ancre-populaire a:hover
@@ -331,7 +343,7 @@ h2
     flex-direction: row;
     background-color: white;
     width: auto;
-    height: 95%;
+    height: 150px;
     padding: 1%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 2px 10px -5px grey;
@@ -509,6 +521,11 @@ h3
         height: 11%;
     }
 
+    #lrecherche
+    {
+        display: none;
+    }
+
     #ancre-populaire
     {
         width: auto;
@@ -524,8 +541,8 @@ h3
         height: 20vmax;
         display: inline-flex;
         flex-direction: row;
+        margin: 1%;
         margin-bottom: 0;
-        margin-inline: 1%;
         flex-wrap: nowrap;
     }
 
@@ -555,8 +572,8 @@ h3
 {
     .logo
     {
-        width: 15%; 
-        height: 15%;
+        width: 20%; 
+        height: 20%;
     }
 
     .nav1>a
@@ -572,8 +589,14 @@ h3
     .fas.fa-map-marker-alt
     {
         padding: 2%;
-        width: 3%;
+        width: 5%;
+        font-size: 1.2em;
         text-align: center;
+    }
+
+    form
+    {
+        justify-content: center;
     }
 
     .trecherche
@@ -582,10 +605,23 @@ h3
         width: 80%;
     }
 
-    .brecherche
+    #brecherche
     {
-        width: 17%;
+        display: none;
+    }
+
+    #lrecherche
+    {
+        display: flex;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        border-collapse: collapse;
+        justify-content: center;
+        width: 10%;
+        font-size: 1.2em;
         padding: 2%;
+        color: white;
+        background-color: #0065FC;
     }
 
     .allfiltre
@@ -622,11 +658,6 @@ h3
         margin: 0;
         border-radius: 0;
         margin-bottom: 2%;
-    }
-
-    #ancre-populaire a
-    {
-        height: 15vmax;
     }
 
     #ancre-activité>div
