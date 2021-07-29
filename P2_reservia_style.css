@@ -566,7 +566,16 @@ h3
     .logo
     {
         width: 100px;
+    	margin-left: 2%;
+		padding-left: 2%;
     }
+
+	.navigation
+	{
+		padding: 0;
+        padding-top: 2%;
+		font-size: 110%;
+	}
 
     nav
     {
@@ -576,7 +585,9 @@ h3
 
     .nav1>a
     {
+        padding-bottom: 2%;
         margin-left: 0;
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
     }
 
@@ -585,11 +596,14 @@ h3
         border-top: none;
         border-bottom: 2px solid #0065FC;
     }
+
     .nav2
     {
         text-align-last: right;
         grid-area: -3/-2/-2/-2; 
         justify-content: flex-end;
+        margin-right: 5%;
+		padding-right: 2%;
     }
 
     .nav2>a:hover
@@ -599,8 +613,8 @@ h3
 
     .fas.fa-map-marker-alt
     {
-        padding: 2%;
-        width: 5%;
+        padding: 3%;
+        width: 8%;
         font-size: 1.2em;
         text-align: center;
     }
@@ -612,8 +626,9 @@ h3
 
     .trecherche
     {
-        padding: 1.9%;
+        padding: 2.9%;
         width: 80%;
+		border-right: none;
     }
 
     #brecherche
@@ -628,9 +643,9 @@ h3
         border-radius: 0 15px 15px 0;
         border-collapse: collapse;
         justify-content: center;
-        width: 10%;
+        width: 15%;
         font-size: 1.2em;
-        padding: 2%;
+        padding: 3%;
         color: white;
         background-color: #0065FC;
     }
@@ -639,10 +654,21 @@ h3
     {
         flex-wrap: wrap;
     }
+
+	.allfiltre>p
+	{
+		width: 100%;
+	}
+
+	.fas.fa-info
+	{
+		margin-right: 2%;
+	}
     
     #ancre-hébergement
     {
         width: auto;
+		height: auto;
         display: flex;
         flex-direction: column;
         background-color:initial;
